@@ -1,0 +1,20 @@
+a=int(input('enter a value:'))
+b=int(input('enter b value:'))
+print('addition of two numbers is:',a+b)
+print('subtraction of two numbers is:',a-b)
+print('multiplication of two numbers is :',a*b)
+print('division of two numbers is:',a/b)
+print('floor division of two numbers is:',a//b)
+print('modulus of two numbers is:',a%b)
+print('exponent is:',a**b)
+
+output:
+enter a value:15
+enter b value:2
+addition of two numbers is: 17
+subtraction of two numbers is: 13
+multiplication of two numbers is : 30
+division of two numbers is: 7.5
+floor division of two numbers is: 7
+modulus of two numbers is: 1
+exponent is: 225
