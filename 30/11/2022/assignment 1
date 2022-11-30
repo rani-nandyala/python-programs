@@ -1,0 +1,31 @@
+program to find tax based on salary
+
+empno=int(input('enter employee number:'))
+empname=input('enter employee name:')
+empdesig=input('enter employee designation:')
+basicsalary=int(input('enter basic salary of employee:'))
+da=int(input('enter da:'))
+ta=int(input('enter ta:'))
+hra=int(input('enter hra:'))
+netsalary=basicsalary+da+ta+hra
+if netsalary>100000:
+    tax=(netsalary*10)/100
+elif netsalary>50000:
+    tax=(netsalary*7)/100
+elif netsalary>40000:
+    tax=(netsalary*4)/100
+elif netsalary>20000:
+    tax=(netsalary*2)/100
+else:
+    tax=0
+print('tax=',tax)
+
+output:
+enter employee number:9
+enter employee name:abhi
+enter employee designation:manager
+enter basic salary of employee:60000
+enter da:3000
+enter ta:5000
+enter hra:10000
+tax= 5460.0
