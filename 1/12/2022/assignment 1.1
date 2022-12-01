@@ -1,0 +1,45 @@
+program to find electricity bill
+
+billno=int(input('enter bill no:'))
+units=int(input('enter no of units:'))
+purpose=input('enter which purpose you are using the current:')
+if purpose=='house':
+    if units<=30:
+        bill=(units*1.9)+25
+    elif units<=75:
+        bill=(units*3)+30
+    elif units<=125:
+        bill=(units*4.5)+45
+    elif units<=225:
+        bill=(units*6)+50
+    elif units<=400:
+        bill=(units*8.75)+55
+    else:
+        bill=(units*9.75)+55
+if purpose=='business':
+    if units<=50:
+        bill=(units*5.4)+30
+    elif units<=100:
+        bill=(units*7.65)+40
+    elif units<=300:
+        bill=(units*9.05)+45
+    elif units<=500:
+        bill=(units*9.6)+45
+    else:
+        bill=(units*10.15)+45
+print('bill:',bill)        
+
+
+
+
+output:
+enter bill no:23456
+enter no of units:560
+enter which purpose you are using the current:house
+bill: 5515.0
+
+enter bill no:44455
+enter no of units:300
+enter which purpose you are using the current:business
+bill: 2760.0
+Footer
