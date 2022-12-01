@@ -1,0 +1,68 @@
+program to find bill based on coupon code
+
+honey=500
+rice=800
+pulses=200
+oil=350
+eggs=180
+name=input("enter name of customer:")
+phno=int(input('enter customer phone number:'))
+address=input('enter address:')
+h=int(input('enter how many kgs of honey do you want:'))
+r=int(input('enter how many bags of rice do you want:'))
+p=int(input('enter how many kgs of pulses do you want:'))
+o=int(input('enter how many kgs of oil do you want:'))
+e=int(input('enter how many sheets of eggs do you want:'))
+bill=(h*honey)+(r*rice)+(p*pulses)+(o*oil)+(e*eggs)
+print('total bill:',bill)
+print('bill before discount:',bill)
+coupon=input('enter couponcode:')
+if coupon=='DIWALI':
+    if(bill>5000):
+      dis=(10*bill)/100   
+      bill=bill-dis
+      tax=(5*bill)/100
+    elif bill>3000:
+      dis=(6*bill)/100
+      bill=bill-dis
+      tax=(7*bill)/100
+    elif bill>1000:
+      dis=(4*bill)/100
+      bill=bill-dis
+      tax=(10*bill)/100
+else:
+      dis=0
+      tax=100
+if coupon=='CHRISTMAS':
+    if(bill>3000):
+      dis=(20*bill)/100   
+      bill=bill-dis
+      tax=(5*bill)/100
+    elif bill>2000:
+      dis=(10*bill)/100
+      bill=bill-dis
+      tax=(7*bill)/100
+    elif bill>1000:
+      dis=(5*bill)/100
+      bill=bill-dis
+      tax=(10*bill)/100
+    else:
+      dis=0
+      tax=100
+print('bill after discount:',bill)
+print('tax after discount:',tax)
+
+output:
+enter name of customer:JANU
+enter customer phone number:9876543210
+enter address:VIZAG
+enter how many kgs of honey do you want:3
+enter how many bags of rice do you want:4
+enter how many kgs of pulses do you want:5
+enter how many kgs of oil do you want:2
+enter how many sheets of eggs do you want:5
+total bill: 7300
+bill before discount: 7300
+enter couponcode:DIWALI
+bill after discount: 6570.0
+tax after discount: 328.5
