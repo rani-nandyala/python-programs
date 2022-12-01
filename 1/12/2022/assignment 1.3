@@ -1,0 +1,40 @@
+program to find tax on bill
+
+honey=500
+rice=800
+pulses=200
+oil=350
+eggs=180
+name=input("enter name of customer:")
+phno=int(input('enter customer phone number:'))
+address=input('enter address:')
+h=int(input('enter how many kgs of honey do you want:'))
+r=int(input('enter how many bags of rice do you want:'))
+p=int(input('enter how many kgs of pulses do you want:'))
+o=int(input('enter how many kgs of oil do you want:'))
+e=int(input('enter how many sheets of eggs do you want:'))
+bill=(h*honey)+(r*rice)+(p*pulses)+(o*oil)+(e*eggs)
+print('total bill:',bill)
+if(bill>3000):
+    tax=(5*bill)/100
+elif bill>2000:
+    tax=(7*bill)/100
+elif bill>1000:
+    tax=(10*bill)/100
+elif bill>500:
+    tax=(15*bill)/100
+else:
+ tax=100
+print('tax:',tax)
+
+output:
+enter name of customer:janu
+enter customer phone number:9876543210
+enter address:vizag
+enter how many kgs of honey do you want:3
+enter how many bags of rice do you want:2
+enter how many kgs of pulses do you want:1
+enter how many kgs of oil do you want:2
+enter how many sheets of eggs do you want:3
+total bill: 4540
+tax: 227.0
