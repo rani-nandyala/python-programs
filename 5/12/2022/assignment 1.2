@@ -1,0 +1,22 @@
+n=int(input("Enter how numbers your want "))
+num=int(input("Enter any number ")) 
+largest=num
+smallest=num
+i=1
+while(i<n):
+    num=int(input("Enter any number "))
+    if(num>largest):
+        largest=num 
+    i=i+1 
+if(num<smallest):
+    smallest=num
+print("The difference is: " , largest-smallest)
+
+output:
+Enter how numbers your want 5
+Enter any number 9
+Enter any number 8
+Enter any number 7
+Enter any number 6
+Enter any number 5
+The difference is:  4
